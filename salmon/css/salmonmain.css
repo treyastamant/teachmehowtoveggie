@@ -1,0 +1,610 @@
+/* 
+    Created on : Nov 7, 2016, 12:30:09 PM
+    Author     : Treya
+*/
+/*desktop styles*/
+
+/*Code for basic heading/text*/
+body {
+    width: 960px;
+    margin: 0px auto;
+}
+h1 {
+    font: Verdana, Arial, sans-serif;
+    font-size: 2em;
+}
+h2 {
+    font: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+}
+h3 {
+    font: Verdana, Arial, sans-serif;
+    font-size: 1.125em;
+    color: #067640;
+}
+h4 {
+    color: #0A629B;
+}
+p {
+    font: Arial, Verdana, sans-serif;
+    font-size: 1em;
+    color: #4c4c4c;
+}
+li {
+    font: Arial, Verdana, sans-serif;
+    font-size: 1em;
+    color: #4c4c4c;
+}
+a {
+    color: #0A629B;
+    text-decoration: none;
+}
+a:hover {
+    color: #01A858;
+}
+a:active, a:visited a:hover {
+    color: #0A629B;
+}
+header h1 {
+    font-size: 4em;
+    line-height: 153px;
+    margin-top: -156px;
+    color: #067640;
+    text-align: right;
+    padding-right: 10px;
+}
+.pageTitle {
+    font-size: 50px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    padding: 5px;
+    margin-top: -320px;
+    margin-bottom: 250px;
+    position: relative;
+    z-index:1;
+    background:
+    linear-gradient(to right, #1DC876, #067640);
+}
+/*Code for content left - pic right sections*/
+
+/*Code for ONE column layout*/
+.parentOneCol {
+    margin-top: 25px;
+   
+    background-color: white;
+}
+.headOneCol {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 960px;
+    background:
+    linear-gradient(to right, #1DC876, #067640);
+    color: white;
+}
+.headOneCol1 {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 960px;
+    background:
+    linear-gradient(to right, #2582BE, #0C466C);
+    color: white;
+}
+.headOneCol3 {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 960px;
+    background:
+    linear-gradient(to right, #3DE393, #0C466C);
+    color: white;
+}
+.parentOneCol h2, .parentOneCol h3 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.parentOneCol img{
+    -moz-box-shadow: 2px 2px 4px 3px #A8383B;
+    -webkit-box-shadow: 2px 2px 4px 3px #A8383B;
+    box-shadow:         2px 2px 4px 3px #A8383B;
+    background-color: white;
+    width: 98%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+/*Code for TWO column layout*/
+.sectionOneTwoCol, .sectionTwoTwoCol {
+    background-color: white;
+    width: 28.5em;
+}
+.sectionTwoTwoCol {
+    margin-left: 40px;
+    margin-right: 0px;
+}
+.parentTwoCol {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+.parentTwoCol img{
+    background-color: white;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.sectionTwoTwoCol img {
+    margin-left: 8px;
+}
+.parentTwoCol p {
+    padding-left: 5px;
+}
+.headTwoCol {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 460px;
+    background:
+    linear-gradient(to right, #2582BE, #0C466C);
+    color: white;
+    margin-right: 35px;
+}
+.headTwoTwoCol {
+    margin-right: 0px;
+}
+
+/*css for navigation*/
+#logo img {
+    position: relative;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+nav {
+    margin-top: -18px;
+    margin-bottom: 20px;
+    overflow:hidden;
+}
+
+/*Strip the ul of padding and list styling*/
+nav ul {
+    line-height: 50px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 960px;
+    z-index: 3;
+    background:
+    linear-gradient(to right, #01A858, #0A629B);
+}
+
+/*Create a horizontal list with spacing*/
+nav li {
+    display: inline-block;
+    margin: 0px;
+}
+
+/*Style for menu links*/
+nav li a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px 16px 16px;
+}
+
+/*Hover state for top level links*/
+nav li:hover a {
+    background: linear-gradient(to bottom right, #1DC876, #2582BE);
+    color: white;
+    padding-top: 15px;
+}
+
+/*Style for dropdown links*/
+nav li:hover ul a {
+    background: White;
+    color: #032033;
+    height: 30px;
+    line-height: 30px;
+}
+
+/*Hover state for dropdown links*/
+nav li:hover ul a:hover {
+    background: linear-gradient(to bottom right, #1DC876, #2582BE);
+    color: white;
+}
+
+/*Hide dropdown links until they are needed*/
+nav li ul {
+    display: none;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px #0C466C;
+}
+
+/*Make dropdown links vertical*/
+nav li ul li {
+    display: block;
+    float: none;
+}
+
+/*Prevent text wrapping*/
+nav li ul li a {
+    min-width: 40px;
+    padding: 12px 0px;
+    display: block;
+}
+
+/*Display the dropdown on hover*/
+nav ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+nav a:visited {
+    color: white;
+}
+
+/*css for footer*/
+footer {
+    background:
+    linear-gradient(to right, #1DC876, #067640);
+    clear: both;
+    height: 65px;
+}
+footer p {
+    color: white;
+}
+#footerCopy {
+    float: left;
+    padding-left:10px;
+    text-align: left;
+}
+footer a:visited, footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #45A2DE;
+}
+#footerLinks {
+    padding-top: 15px;
+    float: right;
+    padding-right: 10px;
+    text-align: right;
+}
+
+/*css for home/index page*/
+
+#bigPic {
+    width: 100%;
+    background-color: white;
+    margin-top: 30px;
+}
+
+/*css for contact page Practice*/
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+    color: #01A858;
+}
+form {
+    margin: 0px auto;
+    width:459px;
+    margin-bottom: 20px;
+}
+
+/*Style the text boxes*/
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #0A629B;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#032033;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+input:focus, textarea:focus {
+    border:1px solid #45A2DE;
+}
+#submit {
+    width:127px;
+    height:40px;
+    background:linear-gradient(to right, #45A2DE, #2582BE);
+    color: white;
+    font-size: 20px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+#submit:hover {
+    opacity:.9;
+}
+
+
+/*mobile handheld devices*/
+@media only screen and (max-width:480px){
+    /*Code for body/navigation*/
+    body {
+        width: 320px;
+        margin: 0px auto;
+        position: relative; 
+        display: -webkit-box; 
+        display: -webkit-flex; 
+        display: -ms-flexbox; 
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    }
+    /*Make all menu links full width*/
+   nav ul li, nav li a {
+        width: 100%;
+    } 
+    nav {
+        text-align: center;
+        display: inline;
+        margin-bottom: -5px;
+    }
+    nav ul {
+        overflow: hidden;
+        background-color: #A83822;
+        position: static;
+        width: 100%;
+    }
+    nav ul a, nav ul li a {
+        text-align: center;
+    }
+    nav ul li {
+        margin-bottom: 1px;
+    }
+    nav ul li, li a {
+        text-align: center;
+    }
+    nav li ul {
+    width: 100%;
+}
+
+/*code for pictures*/
+    #logo img {
+        width: 25%;
+        display: block;
+        margin-bottom: -330px;
+        margin-left: 20px;
+    }
+    #bigPic {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    /*code for titles*/
+    header h1 {
+        font-size: 24px;
+        margin-top: 240px;
+        padding-left: 80px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .pageTitle {
+        padding-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    /*Code for ONE column page*/
+    .parentOneCol p {
+        margin-bottom: 15px;
+    }
+    .parentOneCol {
+        margin-top: 5px;
+    }
+    .parentOneCol img {
+        width: 90%;
+        height: 90%;
+        margin: 15px;
+    }
+    .headOneCol, .headOneCol1, .headOneCol3 {
+        margin-top: 0px;
+    }
+    .headOneCol3 {
+        width: 320px;
+    }
+    /*Code for TWO colmn layout*/
+    .parentTwoCol {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-preferred-size: 320px;
+        flex-basis: 320px;
+        margin-top: 0px;
+    }
+    .parentTwoCol img {
+        margin: 0px;
+    }
+    .headTwoCol {
+        width: 320px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .sectionTwoTwoCol, .sectionOneTwoCol {
+        width: 320px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding-right: 0px;
+    }
+    li {
+        padding-right: 5px;
+        word-wrap: break-word;
+    }
+    
+    /*Code for Plan Page*/
+    .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    ul {
+        word-wrap: break-word;
+        overflow: hidden;
+        padding-right: 15px;
+    }
+    /*code for contact page*/
+    form {
+    width: 320px;
+    }
+    input, textarea {
+	width:300px;
+    }
+    
+    /*css for footer*/
+    footer {
+        clear: both;
+        height: 120px;
+    }
+    footer p {
+        color: white;
+    }
+    #footerCopy {
+        float: none;
+        text-align: center;
+    }
+    footer a:visited, footer a {
+        color: white;
+        text-decoration: none;
+    }
+    footer a:hover {
+        color: #45A2DE;
+    }
+    #footerLinks {
+        padding-top: 15px;
+        float: none;
+        padding-right: 10px;
+        text-align: center;
+    }
+}
+
+/*tablet devices*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+    /*Code for body/navigation*/
+    body {
+        width: 450px;
+        margin: 0px auto;
+    }
+    nav {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin-top: -12px;
+    }
+    nav ul {
+        width: 450px;
+    }
+    nav ul li a{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    header h1 {
+        margin-top: -95px;
+        font-size: 28px;
+        line-height: 100px;
+        padding-right: 0px;
+    }
+    .pageTitle {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+    /*code for images*/
+    #logo img {
+        height: 100px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    #bigPic {
+        margin-bottom: 0px;
+        width: 450px;
+    }
+    
+    /*Code for TWO colmn layout*/
+    .parentTwoCol {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .parentTwoCol img {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .headTwoCol {
+        margin-top: 15px;
+        width: 450px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .sectionTwoTwoCol {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    /*Code for Plan Page*/
+    .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    .parentOneCol img {
+        width: 95%;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+    
+    /*code for contact page*/
+    form {
+        width: 400px;
+    }
+    input, textarea {
+	width:400px;
+    }    
+}
+@media only screen and (min-width:769px) {
+body {
+    width: 960px;
+    margin: 0px auto;
+}
+}

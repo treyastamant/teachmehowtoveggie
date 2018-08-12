@@ -1,0 +1,742 @@
+/* 
+    Created on : Nov 7, 2016, 12:30:09 PM
+    Author     : Treya
+*/
+/*desktop styles*/
+
+/*Code for basic heading/text*/
+body {
+    width: 960px;
+    margin: 0px auto;
+}
+h1 {
+    font: Verdana, Arial, sans-serif;
+    font-size: 2em;
+    color: #7D9F35;
+}
+h2 {
+    font: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    color: #7E1518;
+    padding-left: 5PX;
+}
+h3 {
+    font: Verdana, Arial, sans-serif;
+    font-size: 1.125em;
+    color: #572A72;
+}
+h4 {
+    font: Verdana, Arial, sans-serif;
+    font-size: 1.05em;
+    color: #D3696C;
+    padding-left: 5px;
+}
+p {
+    font: Arial, Verdana, sans-serif;
+    font-size: 1em;
+    color: #4c4c4c;
+}
+li {
+    font: Arial, Verdana, sans-serif;
+    font-size: 1em;
+    color: #4c4c4c;
+}
+a {
+    color: #D3696C;
+}
+a:hover {
+    color: #7E1518;
+}
+a:active, a:visited {
+    color: #754B8E;
+}
+header h1 {
+    padding: 5px;
+    padding-left: 230px;
+    margin-top: -185px;
+    -moz-box-shadow: 2px 2px 4px 3px  #577714;
+    -webkit-box-shadow: 2px 2px 4px 3px  #577714;
+    box-shadow:         2px 2px 4px 3px  #577714;
+    color: #364F00;
+}
+.pageTitle {
+    font-size: 30px;
+    color: #A8383B;
+    padding: 5px;
+    padding-left: 230px;
+    margin-top: 55px;
+    -moz-box-shadow: 2px 2px 4px 3px  #A8383B;
+    -webkit-box-shadow: 2px 2px 4px 3px  #A8383B;
+    box-shadow:         2px 2px 4px 3px  #A8383B;
+    margin-bottom: 60px;
+}
+/*Code for content left - pic right sections*/
+.contentLeftSection {
+    -moz-box-shadow: 2px 2px 4px 3px #572A72;
+    -webkit-box-shadow: 2px 2px 4px 3px #572A72;
+    box-shadow:         2px 2px 4px 3px #572A72;
+    background-color: white;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 300px;
+}
+.leftCol {
+    max-width: 48%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 15em;
+    flex: 1 0 15em;
+    margin: .5em;
+    padding-left: 10px;
+}
+.rightPic {
+    -moz-box-shadow: 2px 2px 4px 3px #7E1518;
+    -webkit-box-shadow: 2px 2px 4px 3px #7E1518;
+    box-shadow:         2px 2px 4px 3px #7E1518;
+    background-color: white;
+    width: 48%;
+    min-width: 450px;
+    float: right;
+    margin: 15px 15px 15px 5px;
+}
+/*Code for content right - pic left sections*/
+.contentRightSection {
+    -moz-box-shadow: 2px 2px 4px 3px #A7C763;
+    -webkit-box-shadow: 2px 2px 4px 3px #A7C763;
+    box-shadow:         2px 2px 4px 3px #A7C763;
+    background-color: white;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 300px;
+}
+.contentRightSection h2, .contentLeftSection h2 {
+    text-align: center;
+}
+.rightCol {
+    max-width: 48%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 15em;
+    flex: 1 0 15em;
+    margin: .5em;
+    padding-left: 10px;
+}
+.leftPic {
+    -moz-box-shadow: 2px 2px 4px 3px #D3696C;
+    -webkit-box-shadow: 2px 2px 4px 3px #D3696C;
+    box-shadow:         2px 2px 4px 3px #D3696C;
+    background-color: white;
+    width: 48%;
+    min-width: 450px;
+    float: left;
+    margin: 15px 0px 15px 15px;
+}
+/*Code for ONE column layout*/
+.parentOneCol {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    -moz-box-shadow: 2px 2px 4px 3px #A8383B;
+    -webkit-box-shadow: 2px 2px 4px 3px #A8383B;
+    box-shadow:         2px 2px 4px 3px #A8383B;
+    background-color: white;
+}
+.parentOneCol p, .parentOneCol h2, .parentOneCol h3, .parentOneCol dt, .parentOneCol table {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 6px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.parentOneCol h2, .parentOneCol h3 {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.parentOneCol img{
+    -moz-box-shadow: 2px 2px 4px 3px #A8383B;
+    -webkit-box-shadow: 2px 2px 4px 3px #A8383B;
+    box-shadow:         2px 2px 4px 3px #A8383B;
+    background-color: white;
+    width: 98%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.parentOneCol video {
+    margin-left: 160px;
+    margin-bottom: 15px;
+}
+.parentOneCol i {
+    margin-left: 240px;
+}
+/*example images*/
+.examplePictures {
+    margin: 0px auto;
+    margin-bottom: 10px;
+    -moz-box-shadow: 2px 2px 4px 3px #A8383B;
+    -webkit-box-shadow: 2px 2px 4px 3px #A8383B;
+    box-shadow:         2px 2px 4px 3px #A8383B;
+}
+/*Code for TWO column layout*/
+.sectionOneTwoCol, .sectionTwoTwoCol {
+    -moz-box-shadow: 2px 2px 4px 3px #7D9F35;
+    -webkit-box-shadow: 2px 2px 4px 3px #7D9F35;
+    box-shadow:         2px 2px 4px 3px #7D9F35;
+    background-color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: .5px;
+    padding-bottom: 6px;
+    width: 28.5em;
+}
+.sectionTwoTwoCol {
+    margin-left: 25px;
+}
+.parentTwoCol {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+.parentTwoCol img{
+    -moz-box-shadow: 2px 2px 4px 3px #9775AB;
+    -webkit-box-shadow: 2px 2px 4px 3px #9775AB;
+    box-shadow:         2px 2px 4px 3px #9775AB;
+    background-color: white;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+/*Code for THREE column layout */
+.headThreeCol {
+    -moz-box-shadow: 2px 2px 4px 3px #9775AB;
+    -webkit-box-shadow: 2px 2px 4px 3px #9775AB;
+    box-shadow:         2px 2px 4px 3px #9775AB;
+    margin-top: 15px;
+    text-align: center;
+    padding: 11px;
+    width: 11.7em;
+}
+.headTwoThreeCol, .headThreeThreeCol {
+    margin-left: 25px;
+}
+.sectionThreeCol  {
+    -moz-box-shadow: 2px 2px 4px 3px #7D9F35;
+    -webkit-box-shadow: 2px 2px 4px 3px #7D9F35;
+    box-shadow:         2px 2px 4px 3px #7D9F35;
+    background-color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: .5px;
+    padding-bottom: 6px;
+    width: 18.125em;
+    min-height: 370px;
+}
+.sectionTwoThreeCol, .sectionThreeThreeCol {
+    margin-left: 25px;
+}
+
+.parentThreeCol {
+    margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.parentThreeCol img {
+    -moz-box-shadow: 2px 2px 4px 3px #A8383B;
+    -webkit-box-shadow: 2px 2px 4px 3px #A8383B;
+    box-shadow:         2px 2px 4px 3px #A8383B;
+    background-color: white;
+    width: 285px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 8px;
+}
+/*
+css for navigation
+*/
+#logo img {
+    position: relative;
+    background-color: white;
+    width: 20%;
+    -moz-box-shadow: 2px 2px 4px 3px  #3C1255;
+    -webkit-box-shadow: 2px 2px 4px 3px  #3C1255;
+    box-shadow:         2px 2px 4px 3px  #3C1255;
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 2;
+}
+#homeLink {
+    padding-left: 220px;
+}
+nav {
+    margin-top: -18px;
+    margin-bottom: 20px;
+    overflow:hidden;
+}
+
+/*Strip the ul of padding and list styling*/
+nav ul {
+    line-height: 50px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 960px;
+    background-color: #A8383B;
+    -moz-box-shadow: 2px 2px 4px 3px  #A8383B;
+    -webkit-box-shadow: 2px 2px 4px 3px  #A8383B;
+    box-shadow:         2px 2px 4px 3px  #A8383B;
+    z-index: 1;
+}
+
+/*Create a horizontal list with spacing*/
+nav li {
+    display: inline-block;
+    margin: 0px;
+}
+
+/*Style for menu links*/
+nav li a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px 16px 16px;
+}
+
+/*Hover state for top level links*/
+nav li:hover a {
+    background: #FDA9AB;
+    color: white;
+}
+
+/*Style for dropdown links*/
+nav li:hover ul a {
+    background: White;
+    color: #540002;
+    height: 30px;
+    line-height: 30px;
+}
+
+/*Hover state for dropdown links*/
+nav li:hover ul a:hover {
+    background: #FDA9AB;
+    color: white;
+}
+
+/*Hide dropdown links until they are needed*/
+nav li ul {
+    display: none;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px #540002;
+}
+
+/*Make dropdown links vertical*/
+nav li ul li {
+    display: block;
+    float: none;
+}
+
+/*Prevent text wrapping*/
+nav li ul li a {
+    min-width: 40px;
+    padding: 12px 0px;
+    display: block;
+}
+
+/*Display the dropdown on hover*/
+nav ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+nav a:visited {
+    color: white;
+}
+/*
+css for footer
+*/
+footer {
+    padding-top: 0.6em;
+    text-align: center;
+}
+/*
+css for home/index page
+*/
+#maintomato {
+    position: relative;
+    margin: .5em;
+    margin-bottom: 1.5em;
+    margin-top: -4.7em;
+    font-size: 300%;
+}
+#tompic {
+    width: 100%;
+    -moz-box-shadow: 2px 2px 4px 3px #A8383B;
+    -webkit-box-shadow: 2px 2px 4px 3px #A8383B;
+    box-shadow:         2px 2px 4px 3px #A8383B;
+    background-color: white;
+    margin-top: 34.5px;
+}
+.contentLeftSection audio {
+    -moz-box-shadow: 2px 2px 4px 3px #A8383B;;
+    -webkit-box-shadow: 2px 2px 4px 3px #A8383B;;
+    box-shadow:         2px 2px 4px 3px #A8383B;;
+    background-color: white;
+    align-content: center;
+    margin: 0px 15px 15px 580px;
+}
+/*css for NAV Practice*/
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*mobile handheld devices*/
+@media only screen and (max-width:480px){
+    /*Code for body/navigation*/
+    body {
+        width: 320px;
+        margin: 0px auto;
+    }
+    /*Make all menu links full width*/
+   nav ul li, nav li a {
+        width: 100%;
+    } 
+    nav {
+        text-align: center;
+        display: inline;
+        margin-bottom: -5px;
+    }
+    nav ul {
+        overflow: hidden;
+        background-color: #A83822;
+        position: static;
+        width: 100%;
+    }
+    nav ul a, nav ul li a {
+        text-align: center;
+    }
+    nav ul li {
+        margin-bottom: 1px;
+    }
+    nav ul li, li a {
+        text-align: center;
+    }
+    nav li ul {
+    width: 100%;
+}
+    #homeLink {
+        padding-left: 5px;
+    }
+    #logo img {
+        width: 30%;
+        display: block;
+        margin-bottom: -280px;
+        margin-left: 14px;
+    }
+    #tompic {
+        margin-top: 4.5px;
+        margin-bottom: 15px;
+    }
+    /*Code for home page*/
+    
+    header h1, #maintomato {
+        visibility: collapse;
+        height: 130px;
+    }
+    .pageTitle {
+        padding-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .contentLeftSection audio {
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    body {
+        position: relative; 
+        display: -webkit-box; 
+        display: -webkit-flex; 
+        display: -ms-flexbox; 
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    }
+    /*Code for content left - pic right sections*/
+    .leftCol {
+        max-width: 98%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+    .rightPic {
+        min-width: 10px;
+        width: 90%;
+        float: none;
+        margin: 5px auto;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+    /*Code for content right - pic left sections*/
+    .rightCol {
+        max-width: 98%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+    .leftPic {
+        min-width: 10px;
+        width: 90%;
+        float: none;
+        margin: 5px auto;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    /*Code for ONE column page*/
+    .parentOneCol p {
+        margin-bottom: 60px;
+    }
+    .parentOneCol video {
+        margin-left: 0px;
+        width: 98%;
+        height: 98%;
+    }
+    .parentOneCol i {
+        margin-left: 0px;
+    }
+    .parentOneCol img {
+        width: 90%;
+        height: 90%;
+        margin: 15px;
+    }
+    /*Code for TWO colmn layout*/
+    .parentTwoCol {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+        margin-top: 25px;
+    }
+    .sectionTwoTwoCol {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    /*Code for THREE column layout*/
+    .parentThreeCol {
+        flex-wrap: wrap;
+        flex-basis: 320px;
+        margin-top: 20px;
+    }
+    .headThreeCol {
+        width: 300px;
+        margin-top: 25px;
+    }
+    .headTwoThreeCol, .headThreeThreeCol {
+        margin-left: 0px;
+    }
+    .sectionThreeCol  {
+        width: 310px;
+        min-height: 10px;
+        text-align: center;
+    }
+    .parentThreeCol li, .parentThreeCol p {
+        text-align: left;
+    }
+    .sectionTwoThreeCol, .sectionThreeThreeCol {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    /*Code for Plan Page*/
+    .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    .examplePictures {
+        width:90%;
+    }
+    ul {
+        word-wrap: break-word;
+        overflow: hidden;
+        padding-right: 15px;
+    }
+    
+    
+}
+/*tablet devices*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+    /*Code for body/navigation*/
+    body {
+        width: 450px;
+        margin: 0px auto;
+    }
+    nav {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin-top: -12px;
+    }
+    nav ul {
+        width: 450px;
+    }
+    nav ul li a{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    header h1 {
+        margin-top: -75px;
+        font-size: 24px;
+        padding-left: 120px;
+    }
+    #homeLink {
+        padding-left: 120px;
+    }
+    .pageTitle {
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    /*Code for home page*/
+    #maintomato {
+        position: relative;
+        margin: .5em;
+        margin-top: -6.5em;
+        font-size: 150%;
+    }
+    #tompic {
+        margin-bottom: 25px;
+    }
+    .contentLeftSection audio {
+        margin: 0px auto;
+    }
+    /*Code for content left - pic right sections*/
+    .leftCol {
+        max-width: 98%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+    .rightPic {
+        min-width: 10px;
+        width: 90%;
+        float: none;
+        margin: 10px auto;
+        margin-bottom: 15px;
+        margin-left: 22px;
+    }
+    .contentLeftSection audio {
+        margin-bottom: 15px;
+    }
+    /*Code for content right - pic left sections*/
+    .rightCol {
+        max-width: 98%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+    .leftPic {
+        min-width: 10px;
+        width: 90%;
+        float: none;
+        margin: 10px auto;
+        margin-top: 15px;
+        margin-left: 22px;
+    }
+    /*Code for TWO colmn layout*/
+    .parentTwoCol {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+        margin-top: 25px;
+    }
+    .sectionTwoTwoCol {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    /*Code for THREE column layout*/
+    .parentThreeCol {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+        margin-top: 20px;
+    }
+    .headThreeCol {
+        margin-top: 25px;
+        width: 428px;
+    }
+    .headTwoThreeCol, .headThreeThreeCol {
+        margin-left: 0px;
+    }
+    .parentThreeCol li, .parentThreeCol p {
+        text-align: left;
+    }
+    .sectionThreeCol {
+        width: 438px;
+        min-height: 10px;
+        text-align: center;
+    }
+    .sectionTwoThreeCol, .sectionThreeThreeCol {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    /*Code for Plan Page*/
+    .color {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    .parentOneCol img {
+        width: 95%;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+    /*Code for Recipes page*/
+    .parentOneCol video {
+        margin-left: 0px;
+        width: 98%;
+    }
+    .parentOneCol i {
+        margin-left: 0px;
+    }
+    .examplePictures {
+        width:90%;
+    }
+}
+@media only screen and (min-width:769) {
+body {
+    width: 960px;
+    margin: 0px auto;
+}
+}
